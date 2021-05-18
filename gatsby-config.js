@@ -5,7 +5,28 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options:{
+        url: `http://fagerstabrukshotell.local/graphql`,
+        develop:{
+          hardCacheMediaFiles: true,
+        },
+      },
+    },
+
+// {
+//   resolve: `gatsby-source-contentful`,
+//   options: {
+//     downloadLocal: false,
+//     spaceId: `your_space_id`,
+//     // Learn about environment variables: https://gatsby.dev/env-vars
+//     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+//   },
+//   },
+
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

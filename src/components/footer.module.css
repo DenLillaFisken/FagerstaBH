@@ -1,0 +1,7 @@
+.test {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 200px;
+  background-color: green;
+}
