@@ -1,0 +1,63 @@
+.wrapper {
+  position: relative;
+  top: 3vh;
+  left: 2.2vw;
+  z-index: -1;
+  width: 96vw;
+  height: 94vh;
+  margin-bottom: 12vh;
+}
+.dFlex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.contactForm {
+  position: absolute;
+  top: 11vh;
+  left: 63vw;
+  width: 30vw;
+  height: 72vh;
+  background-color: #6d6d6d;
+  opacity: 0.95;
+  border-radius: 3px;
+
+}
+form {
+  margin-top: 30vh;
+  margin-left: 5vw;
+}
+input,
+button,
+textarea {
+  width: 80%;
+  height: 5vh;
+  background-color: #585858;
+  margin-bottom: 2vh;
+  border: none;
+}
+textarea {
+  height: auto;
+}
+#widgetContainer {
+  background-color: rgb(236, 234, 229);
+  padding: 2vw;
+  height: 10vh;
+  width: 60vw;
+  border-radius: 2px;
+}
+div.bv-framework.bv-widget {
+  margin-top: -34vh;
+}
+.map {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.line{
+  width: 50px;
+  height: 1px;
+  background-color: white;
+  margin: 0 10px;
+}

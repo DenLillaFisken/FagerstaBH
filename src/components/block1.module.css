@@ -1,0 +1,57 @@
+.wrapper {
+  width: 100vw;
+}
+.splitDiv {
+  height: 56vh;
+  background-color: rgb(231, 230, 229);
+}
+.blockDiv {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  margin: 0 auto;
+}
+
+.wrapper2 {
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  overflow: hidden;
+}
+.fixed {
+  position: absolute;
+  top: -18vh;
+  width: 100%;
+  height: 20vh;
+  opacity: 0.3;
+  background-color: rgb(199, 198, 195);
+  transition: 1.5s;
+}
+.wrapper2:hover .fixed {
+  transition: 1.5s;
+  top: 0;
+}
+.blockImg {
+  width: 100%;
+  height: 100%;
+}
+.line {
+  width: 6vw;
+  height: 1px;
+  background-color: black;
+  margin: 0 15px;
+}
+.colorbg{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(231, 230, 229);
+}
+.box{
+  height: 56vh;
+  width: 100vw;
+}

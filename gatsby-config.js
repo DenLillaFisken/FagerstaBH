@@ -8,7 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options:{
-        url: `http://fagerstabrukshotell.local/graphql`,
+        url: `http://test.local/graphql`,
+        useACF: true,
         develop:{
           hardCacheMediaFiles: true,
         },
@@ -27,6 +28,7 @@ module.exports = {
 
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-page-load-delay',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,6 +49,18 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        // trackingId: "UA-155166231-1",
+        trackingIds: [
+          //"UA-155166231-1", // Google Analytics / GA
+          "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
       },
     },
     `gatsby-plugin-gatsby-cloud`,

@@ -1,0 +1,185 @@
+.wrapper {
+  position: relative;
+  top: 3vh;
+  left: 2vw;
+  z-index: -1;
+  width: 96vw;
+  height: 94.5vh;
+  margin-bottom: 6vh;
+  background-color: rgb(221, 220, 218);
+  padding: 0;
+  z-index: -5;
+}
+.splitDiv1 {
+  width: 100%;
+  height: 56vh;
+  background-color: rgb(221, 221, 221);
+  padding: 0;
+}
+.blockDiv {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggleDiv {
+  width: 100%;
+  height: 2vh;
+  background-color: rgb(221, 221, 221);
+}
+.fullImg {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(221, 221, 221);
+  padding: 0;
+}
+.halfImg,
+.halfColor {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+}
+.halfColor {
+  background-color: #283c3a;
+}
+.bookBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 75vh;
+  left: 40.5vw;
+  width: 14vw;
+  height: 10vh;
+  border: 3px solid rgb(221, 221, 221);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+.bookBtn:hover {
+  cursor: pointer;
+}
+
+.bookBtn:hover .menuLine {
+  width: 50px;
+  transform: ScaleX(1);
+}
+
+.LillysImg {
+  position: absolute;
+  top: 30vh;
+  left: 16.5vw;
+  width: 60vw;
+  height: 40vh;
+  opacity: 0.9;
+  border-radius: 3px;
+}
+.bistroBlock1,
+.bistroBlock2 {
+  position: relative;
+  top: -61vh;
+  left: 8vw;
+  width: 28vw;
+  height: 66vh;
+  background-color: White;
+  opacity: 1;
+  /* box-shadow: -4px 2px 11px -5px #1f1f1f; */
+  border-radius: 3px;
+}
+.bistroBlock2 {
+  width: 46vw;
+  left: 46vw;
+  background-color: #414040;
+}
+.course {
+  padding-top: 4vh;
+  padding-left: 4vw;
+  color: white;
+}
+.course2 {
+  padding-top: 2vh;
+  padding-left: 4vw;
+  color: black;
+}
+.courseHeader {
+  padding-top: 15vh;
+  padding-left: 4vw;
+}
+.dFlex {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2vw;
+}
+.lineS {
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  margin: 0 1vw;
+}
+.lineM {
+  width: 4vw;
+  height: 1px;
+  background-color: black;
+  margin: 0 1vw;
+}
+.lineL {
+  width: 20vw;
+  height: 1px;
+  background-color: black;
+  margin: 0 2vw;
+}
+.textW {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+.btnLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blockDivS {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuCol {
+  height: 20vh;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menuRowDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuRow {
+  width: 80%;
+}
+.menuLine {
+  height: 1px;
+  width: 0px;
+  background-color: white;
+  transition: transform 1000ms;
+  transform: ScaleX(0);
+  margin: 0 10px;
+}

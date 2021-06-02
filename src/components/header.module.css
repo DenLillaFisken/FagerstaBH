@@ -1,5 +1,136 @@
-.d {
+.logo {
+  width: 12vw;
+  animation: fade 1s ease-in;
+  cursor: pointer;
+}
+.fullWidth {
+  width: 100vw;
+  height: 12vh;
+}
+.margin {
+  margin-top: 2vw;
+  margin-left: 2.5vw;
+}
+.bookingMini {
+  position: fixed;
+  top: 20vh;
+  left: -5vw;
+  width: 12vw;
+  height: 3.5vw;
+  background-color: rgb(80, 80, 83);
+  margin-top: 20vh;
+  border-radius: 2px;
   display: flex;
-  justify-content: between;
+  justify-content: center;
   align-items: center;
+  transition: 1s;
+}
+.bookingMini:hover {
+  transition: 1s;
+  left: 0;
+}
+.bookingMini > p {
+  margin: 0;
+  color: white;
+  margin-left: 5vw;
+}
+.header {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+}
+.menuHamLine {
+  width: 100%;
+  height: 8px;
+}
+.menu2 {
+  position: absolute;
+  top: 2vw;
+  left: 90vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 5vw;
+  z-index: 50;
+}
+.menuLine {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+.menuLine2 {
+  position: relative;
+  z-index: 155;
+  height: 1px;
+  width: 0px;
+  background-color: black;
+  margin: 10px;
+  transition: transform 400ms;
+  transform: scaleX(1);
+}
+.lineSection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+h5,
+p {
+  color: white;
+}
+/* MENY */
+
+.btn2 {
+  line-height: 45px;
+  letter-spacing: 5px;
+  animation: fade 1s ease-in;
+}
+
+.btn2:hover,
+.btn2:active {
+  letter-spacing: 12px;
+}
+
+.btn2:after,
+.btn2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 100ms ease-in-out;
+  width: 0;
+}
+
+.btn2:hover:after,
+.btn2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 100ms ease-in-out;
+  width: 70%;
+}
+
+.btn2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+* {
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+.menuText {
+  color: black;
 }

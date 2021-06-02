@@ -1,7 +1,39 @@
-.test {
-  position: absolute;
+.footer {
+  position: relative;
   bottom: 0;
   width: 100vw;
-  height: 200px;
-  background-color: green;
+  height: 30vh;
+  background-color: #171717;
+  display: flex;
+  padding-top: 8vh;
+}
+.bottomFooter {
+  width: 100vw;
+  height: 1vh;
+  background-color: rgb(17, 17, 17);
+}
+.innerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4vh;
+}
+.line {
+  width: 20%;
+  height: 0.5px;
+  margin-bottom: 2vh;
+  background-color: #454647;
+}
+h5,
+p {
+  color: #454647;
+  margin: 20px 0;
+}
+.topFooter {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(224, 221, 219);
+}
+.footerText {
+  margin-top: 10px;
 }

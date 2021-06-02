@@ -1,21 +1,47 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-
-import * as style from "./woop.module.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import {Row, Col} from 'react-bootstrap'
 import logo from "../images/test.jpg"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import styled, { createGlobalStyle } from "styled-components"
+import * as style from "./restaurant.module.css"
+
+import Layout from "../components/layout"
+import { Parallax } from "react-parallax";
+
+import img from "../images/img1.jpg";
 
 const Restaurant = () => (
     
-<div>
-    <Header />
-    <div>
-        <h1>Restaurang</h1>
+    <Layout>
+    <div className={style.imgWrapper}>
+        <Parallax className={style.fullImg} bgImage={ img } strength={250}>
+        
+     
+        </Parallax>
     </div>
-    <Footer />
-</div>
+      
+        <div className={style.restaurantMenu}>
+                <a className={style.dFlex} href="/lunch/">
+                    <div className={style.line}></div>
+                    <h5>LUNCHMENY</h5>
+                    <div className={style.line}></div>
+                </a>
+                <a className={style.dFlex} href="/lunch/">
+                    <div className={style.line}></div>
+                    <h2>BOKA BORD</h2>
+                    <div className={style.line}></div>
+                </a>
+                <a className={style.dFlex} href="/bistro/">
+                    <div className={style.line}></div>
+                    <h5>LILLY'S BISTRO</h5>
+                    <div className={style.line}></div>
+                </a>
+            </div>
+    </Layout>
 
 )
 
 export default Restaurant
+

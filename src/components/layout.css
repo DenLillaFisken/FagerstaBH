@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "NimbusSanL";
+  src: local("NimbusSanL"), url(../fonts/NimbusSanL-Reg.otf) format("truetype");
+}
+@font-face {
+  font-family: "Soigne";
+  src: local("Soigne"), url(../fonts/Soigné.ttf) format("truetype");
+}
 /* MIN CSS */
 .fullBackground {
   position: absolute;
@@ -6,4 +14,17 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
+}
+
+body {
+  font-family: NimbusSanL;
+}
+main {
+  position: absolute;
+  width: 100%;
+  z-index: -5;
+}
+.cake {
+  border: 5px solid red;
+  margin: 50px;
 }

@@ -1,0 +1,107 @@
+/* .navbar {
+  position: absolute;
+  top: 25vh;
+  left: 40vw;
+  width: 20vw;
+}
+ul,
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 24px;
+}
+ul {
+  flex-direction: row;
+}
+li:hover {
+  cursor: pointer;
+} */
+a {
+  text-align: left;
+  width: 20vw;
+  height: 5vh;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.menuBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+.menuBlock1 {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menuBlock2 {
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.boldText {
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smallText {
+  text-align: center;
+}
+.smallText:hover {
+  opacity: 0.5;
+}
+.dFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  height: 1px;
+  width: 1vw;
+  background-color: black;
+  margin: 0 0.7vw;
+}
+.menuWrapper {
+  margin-top: 40vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.menuLine {
+  height: 1px;
+  width: 0px;
+  background-color: black;
+  transition: transform 1000ms;
+  transform: ScaleX(0);
+  margin: 0 10px;
+}
+
+.lineSection {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  overflow-x: hidden;
+}
+
+.lineSection:hover .menuLine {
+  width: 50px;
+  transform: ScaleX(1);
+}
