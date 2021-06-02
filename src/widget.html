@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script charset="UTF-8" type="text/javascript" src="//online.bookvisit.com/Content/flexwidget/FlexWidgetFullScripts.min.js"></script>
+    <script charset="UTF-8" type="text/javascript">
+            var baseUrl = "https://online.bookvisit.com/v2/widget/getwidget";
+            (function($) {
+                        $.getJSON(baseUrl + "?channelId=56b734f3-8829-40af-927e-9f27f2cf7f37&openOption=redirect&culture=sv-SE&layout=StandardWide&containerId=widgetContainer&displayPromoCode=true&displayCorpCode=false&displayIATACode=false&displayCalendarStartsAtFirstAvailableDay=true&lengthOfStay=2&currency=SEK", function(json)
+            { $("#widgetContainer").html(json.Widget);}); })(bvJQuery);
+    </script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="book-room-btn">
+        <div id="widgetContainer"></div>
+    </div>
+</body>
+</html>
